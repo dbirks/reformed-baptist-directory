@@ -11,6 +11,7 @@
 -e file:.
 aiohttp==3.9.5
     # via langchain
+    # via langchain-community
 aiosignal==1.3.1
     # via aiohttp
 annotated-types==0.7.0
@@ -21,6 +22,8 @@ certifi==2024.6.2
     # via requests
 charset-normalizer==3.3.2
     # via requests
+dataclasses-json==0.6.7
+    # via langchain-community
 frozenlist==1.4.1
     # via aiohttp
     # via aiosignal
@@ -34,24 +37,35 @@ jsonpatch==1.33
 jsonpointer==3.0.0
     # via jsonpatch
 langchain==0.2.5
+    # via langchain-community
+    # via mail-processor
+langchain-community==0.2.5
     # via mail-processor
 langchain-core==0.2.8
     # via langchain
+    # via langchain-community
     # via langchain-text-splitters
 langchain-text-splitters==0.2.1
     # via langchain
 langsmith==0.1.79
     # via langchain
+    # via langchain-community
     # via langchain-core
+marshmallow==3.21.3
+    # via dataclasses-json
 multidict==6.0.5
     # via aiohttp
     # via yarl
+mypy-extensions==1.0.0
+    # via typing-inspect
 numpy==1.26.4
     # via langchain
+    # via langchain-community
 orjson==3.10.5
     # via langsmith
 packaging==24.1
     # via langchain-core
+    # via marshmallow
 pydantic==2.7.4
     # via langchain
     # via langchain-core
@@ -62,19 +76,34 @@ python-dotenv==1.0.1
     # via mail-processor
 pyyaml==6.0.1
     # via langchain
+    # via langchain-community
     # via langchain-core
+regex==2024.5.15
+    # via tiktoken
 requests==2.32.3
     # via langchain
+    # via langchain-community
     # via langsmith
+    # via tavily-python
+    # via tiktoken
 sqlalchemy==2.0.30
     # via langchain
+    # via langchain-community
+tavily-python==0.3.3
+    # via mail-processor
 tenacity==8.4.1
     # via langchain
+    # via langchain-community
     # via langchain-core
+tiktoken==0.7.0
+    # via tavily-python
 typing-extensions==4.12.2
     # via pydantic
     # via pydantic-core
     # via sqlalchemy
+    # via typing-inspect
+typing-inspect==0.9.0
+    # via dataclasses-json
 urllib3==2.2.2
     # via requests
 yarl==1.9.4
