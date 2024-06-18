@@ -1,0 +1,7 @@
+{
+	"name": "Python 3",
+	"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm"
+	// "features": {
+	// 	"ghcr.io/e-gineering/devcontainer-features/rye:1": {}
+	// }
+}
